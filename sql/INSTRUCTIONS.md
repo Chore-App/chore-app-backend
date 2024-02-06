@@ -4,10 +4,10 @@
 
 Open your terminal and run the following Docker command to start a PostgreSQL container named `postgres-db`. This will set up a PostgreSQL server accessible on port 5432 of your localhost.
 
-    docker run --name postgres-db -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
+    docker run --name postgres-db -e POSTGRES_PASSWORD={password} -p 5432:5432 -d postgres
 
 - `--name postgres-db` gives the container a name.
-- `-e POSTGRES_PASSWORD=docker` sets the default password.
+- `-e POSTGRES_PASSWORD={password}` sets the default password.
 - `-p 5432:5432` maps the container's port to your localhost.
 - `-d postgres` runs the PostgreSQL image in detached mode.
 
@@ -37,7 +37,7 @@ Open your preferred database management tool (e.g., DataGrip) and connect to the
 - **Host:** `localhost`
 - **Port:** `5432`
 - **User:** `postgres`
-- **Password:** `docker`
+- **Password:** `{password}`
 
 Once connected, navigate to your `sql/ddl/` directory within your database management tool. Open each `.sql` file (`categories.sql`, `chores.sql`, `user_credentials.sql`, `users.sql`) and run the SQL commands contained within to create the necessary tables in your database.
 
