@@ -1,5 +1,6 @@
-package app.chores.choreappbackend
+package app.chores.choreappbackend.services.impl
 
+import app.chores.choreappbackend.services.ChoreService
 import org.springframework.stereotype.Service
 
 /**

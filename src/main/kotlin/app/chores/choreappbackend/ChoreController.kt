@@ -1,5 +1,6 @@
 package app.chores.choreappbackend
 
+import app.chores.choreappbackend.services.ChoreService
 import app.chores.choreappbackend.services.UserService
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestParam

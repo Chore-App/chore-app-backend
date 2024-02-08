@@ -1,4 +1,4 @@
-package app.chores.choreappbackend
+package app.chores.choreappbackend.services
 
 /**
  * The ChoreService interface is a service that handles business logic for the ChoreController.
