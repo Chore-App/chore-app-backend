@@ -12,11 +12,11 @@ import jakarta.persistence.Table;
 @Table(name = "users")
 class User (
     @Id
-    val id : Int,
+    val id : Int = 0,
 
-    val firstName : String,
+    val firstName : String = "",
 
-    val lastName : String,
+    val lastName : String = "",
 
-    val email : String,
+    val email : String = "",
 )
